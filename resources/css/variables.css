@@ -1,0 +1,62 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quicksand&display=swap');
+
+
+:root {
+/* Body */
+--body-bg: #F5F3F5;
+
+/* Typography */
+--ff-text: 'Quicksand', sans-serif;
+--ff-title: 'Poppins', sans-serif;
+
+--fs-h1: 3.75rem;
+--fs-h2: 2rem;
+--fs-h3: 1.5rem;
+--fs-body: 1.2rem;
+
+--fw-normal: 400;
+--fw-bold: 700;
+
+/* Colors */
+--clr-light: #F5F3F5;
+--clr-lightgreen: #81B622;
+--clr-green: #59981A;
+--clr-moss: #3D550C;
+--clr-darkgreen: #1F361D;
+}
+
+/* Default style */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-bg) ;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+
+p {
+    font-family: var(--ff-text);
+    font-weight: var(--fw-normal);
+}

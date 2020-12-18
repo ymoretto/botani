@@ -1,0 +1,122 @@
+.header-welcome {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
+
+.cover-image {
+    background-image: url('/images/jardim.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.logo-image-welcome {
+    max-width: 200px;
+}
+
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.welcome__container--about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.welcome__container--about p {
+    margin: 0 5rem;
+}
+
+.welcome__container--about img {
+    max-width: 300px;
+    margin: 0 5rem;
+}
+
+.welcome__detalhe {
+    max-width: 200px;
+}
+
+.welcome__container--bullets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.welcome__container--bullets img {
+    max-width: 15px;
+}
+
+.welcome__container--bullets-item {
+    margin: 5rem;
+}
+
+.welcome__footer {
+    background-color: var(--clr-green);
+}
+  
+.welcome__footer p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+}
+
+@media screen and (max-width: 900px) {
+    .header-welcome {
+        justify-content: space-around;
+        padding: 0.5rem 2rem;
+    }
+    .logo-image-welcome {
+        max-width: 7em;
+    }
+    .welcome__container--about img {
+        display:none;
+    }
+    .cover-image {
+        height: 30vh;
+    }
+    .welcome__container--bullets {
+        flex-wrap: wrap;
+    }
+    .welcome__container--bullets-item {
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header-welcome {
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .logo-image-welcome {
+        display: inline;
+        max-width: 80px;
+        margin-right: 2rem;
+    }
+
+    .cover-image {
+        display: hidden;
+    }
+
+
+
+}
